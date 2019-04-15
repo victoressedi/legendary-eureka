@@ -12,6 +12,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class Notification
 {
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -42,7 +43,7 @@ class Notification
      * @ORM\OneToMany(targetEntity="App\Entity\NotificationUser", mappedBy="notification")
      */
     private $users;
-    
+
     /**
      * @ORM\Column(type="array", nullable=true)
      * @Groups({"user-read", "notification"})
@@ -53,16 +54,22 @@ class Notification
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $createdDate;
+
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $updatedDate;
-    
+
     public function __construct()
     {
-        $this->users = new ArrayCollection();
+        $this->users       = new ArrayCollection();
         $this->createdDate = new \dateTime();
         $this->updatedDate = new \dateTime();
+    }
+
+    public function __toString()
+    {
+        return "Notification (" . $this->getId() . ")";
     }
 
     public function getId(): ?int
@@ -116,7 +123,8 @@ class Notification
 
     public function addUser(NotificationUser $user): self
     {
-        if (!$this->users->contains($user)) {
+        if (!$this->users->contains($user))
+        {
             $this->users[] = $user;
             $user->setNotification($this);
         }
@@ -126,36 +134,41 @@ class Notification
 
     public function removeUser(NotificationUser $user): self
     {
-        if ($this->users->contains($user)) {
+        if ($this->users->contains($user))
+        {
             $this->users->removeElement($user);
             // set the owning side to null (unless already changed)
-            if ($user->getNotification() === $this) {
+            if ($user->getNotification() === $this)
+            {
                 $user->setNotification(null);
             }
         }
 
         return $this;
     }
-    
+
     public function getCreatedDate(): ?\dateTime
     {
         return $this->createdDate;
     }
+
     public function setCreatedDate(?\dateTime $createdDate = null): self
     {
-        $this->createdDate = $createdDate? $createdDate: new \dateTime();
+        $this->createdDate = $createdDate ? $createdDate : new \dateTime();
         return $this;
     }
+
     public function getUpdatedDate(): ?\dateTime
     {
         return $this->updatedDate;
     }
+
     public function setUpdatedDate(?\dateTime $updatedDate = null): self
     {
-        $this->updatedDate = $updatedDate? $updatedDate: new \dateTime();
+        $this->updatedDate = $updatedDate ? $updatedDate : new \dateTime();
         return $this;
     }
-    
+
     public function getParams(): ?array
     {
         return $this->params;
@@ -166,4 +179,5 @@ class Notification
         $this->params = $params;
         return $this;
     }
+
 }

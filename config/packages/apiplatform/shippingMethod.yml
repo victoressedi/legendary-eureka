@@ -1,0 +1,11 @@
+resources:
+    App\Entity\ShippingMethod:
+        attributes:
+            pagination_enabled: false
+            normalization_context:
+                groups: ['shipping-method-read']
+            denormalization_context:
+                groups: ['shipping-method-write']
+        collectionOperations:
+            
+        itemOperations:

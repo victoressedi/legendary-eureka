@@ -1,0 +1,12 @@
+Essedi\EasyCommerce\Model\ProductPrice:
+    attributes:
+        value:
+            groups: ['order-read', 'category-read', 'product-read', 'attribute-read', 'attributevalue-read', 'price-read']
+        final:
+            groups: ['order-read', 'category-read', 'product-read', 'attribute-read', 'attributevalue-read', 'price-read']
+        currency:
+            groups: ['order-read', 'category-read', 'product-read', 'attribute-read', 'attributevalue-read', 'price-read']
+        vat:
+            groups: ['order-read', 'category-read', 'product-read', 'attribute-read', 'attributevalue-read', 'price-read']
+        offer:
+            groups: ['order-read', 'category-read', 'product-read', 'attribute-read', 'attributevalue-read', 'price-read']

@@ -1,0 +1,4 @@
+App\Entity\ProductImage:
+    attributes:
+        image:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read", "product-read", "category-read"]

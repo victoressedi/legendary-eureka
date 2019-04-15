@@ -1,0 +1,14 @@
+App\Entity\Notification:
+    attributes:
+        id:
+            groups: ["user-read", "notification-user-read","notification-read"]
+        name:
+            groups: ["user-read", "notification-user-read","notification-read"]
+        description:
+            groups: ["user-read", "notification-user-read","notification-read"]
+        title:
+            groups: ["user-read", "notification-user-read","notification-read"]
+        params:
+            groups: ["user-read", "notification-user-read","notification-read"]
+        image:
+            groups: ["user-read", "notification-user-read","notification-read"]

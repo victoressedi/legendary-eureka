@@ -1,0 +1,13 @@
+App\Entity\Category:
+    attributes:
+        id:
+            groups: ["product-read","category-read"]
+        name:
+            groups: ["product-read","category-read"]
+        title:
+            groups: ["product-read","category-read"]
+        description:
+            groups: ["product-read","category-read"]
+        image:
+            groups: ["product-read","category-read"]
+

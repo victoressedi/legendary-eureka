@@ -1,0 +1,20 @@
+App\Entity\ShippingMethod:
+    attributes:
+        id: 
+            groups: ["shipping-method-read", "shipping-method-write"]
+        name:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        title:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        description:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        image:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        shippingZones:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        class:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        value:
+            groups: ["shipping-method-read", "shipping-method-write"]
+        valueType:
+            groups: ["shipping-method-read", "shipping-method-write"]

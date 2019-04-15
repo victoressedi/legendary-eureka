@@ -1,0 +1,8 @@
+App\Entity\Product:
+    attributes:
+        gallery:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]
+        attributes:
+            groups: ["product-read",  "category-read"]
+        campaigns:
+            groups: ["product-read",  "category-read"]

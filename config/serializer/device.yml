@@ -1,0 +1,20 @@
+App\Entity\Device:
+    attributes:
+        uuid:
+            groups: ["device-read","device-write"]
+        model:
+            groups: ["device-read","device-write"]
+        platform:
+            groups: ["device-read","device-write"]
+        manufacturer:
+            groups: ["device-read","device-write"]
+        token:
+            groups: ["device-read","device-write"]
+        lang:
+           groups: ["device-read","device-write"]
+        version:
+            groups: ["device-read","device-write"]
+        user:
+            groups: ["device-read","device-write"]
+        cordova:
+            groups: ["device-read","device-write"]

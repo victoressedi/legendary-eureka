@@ -1,0 +1,14 @@
+App\Entity\Order:
+    attributes:
+        id:
+            groups: ["order-write","order-read","sold-product-read","sold-product-attribute-read"]
+        products:
+            groups: ["order-write","order-read","order-write","sold-product-read"]
+        status:
+            groups: ["order-write","order-read","order-write","sold-product-read"]
+        createdDate:
+            groups: ["order-read","order-write","sold-product-read"]
+        updatedDate:
+            groups: ["order-read","order-write","sold-product-read"]
+        user:
+            groups: ["order-write","order-read","order-write","sold-product-read"]

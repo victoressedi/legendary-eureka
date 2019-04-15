@@ -12,6 +12,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class NotificationUser
 {
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -42,22 +43,28 @@ class NotificationUser
      * @Groups({"user-read", "notification"})
      */
     private $deleted = false;
-    
+
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $createdDate;
+
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $updatedDate;
 
-    
     public function __construct()
     {
         $this->createdDate = new \dateTime();
         $this->updatedDate = new \dateTime();
     }
+
+    public function __toString()
+    {
+        return "NotificationUser (" . $this->getId() . ")";
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -110,23 +117,27 @@ class NotificationUser
 
         return $this;
     }
-    
+
     public function getCreatedDate(): ?\dateTime
     {
         return $this->createdDate;
     }
+
     public function setCreatedDate(?\dateTime $createdDate = null): self
     {
-        $this->createdDate = $createdDate? $createdDate: new \dateTime();
+        $this->createdDate = $createdDate ? $createdDate : new \dateTime();
         return $this;
     }
+
     public function getUpdatedDate(): ?\dateTime
     {
         return $this->updatedDate;
     }
+
     public function setUpdatedDate(?\dateTime $updatedDate = null): self
     {
-        $this->updatedDate = $updatedDate? $updatedDate: new \dateTime();
+        $this->updatedDate = $updatedDate ? $updatedDate : new \dateTime();
         return $this;
     }
+
 }

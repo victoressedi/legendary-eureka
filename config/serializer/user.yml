@@ -1,0 +1,30 @@
+App\Entity\User:
+    attributes:
+        id:
+            groups: ['user-read']
+        name:
+            groups: ['user-write', 'user-read']
+        surnames:
+            groups: ['user-write', 'user-read']
+        image:
+            groups: ['user-read']
+        phone:
+            groups: ['user-write', 'user-read']
+        dni:
+            groups: ['user-write', 'user-read']
+        gender:
+            groups: ['user-write', 'user-read']
+        birthDate:
+            groups: ['user-write', 'user-read']
+
+        password:
+            groups: ['user-write']
+        password_conf:
+            groups: ['user-write']
+        plainPassword:
+            groups: ['user-write']
+
+        email:
+            groups: ['user-read']
+        countNotification:
+            groups: ['user-read']

@@ -1,0 +1,8 @@
+App\Entity\Campaign:
+    attributes:
+        id:
+            groups: ['campaign-read',"product-read","category-read"]
+        name:
+            groups: ['campaign-read',"product-read","category-read"]
+        products:
+            groups: ["campaign-read","category-read"]

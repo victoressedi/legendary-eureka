@@ -1,0 +1,18 @@
+App\Entity\SoldProductAttribute:
+    attributes:
+        id:
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]
+        title:
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]
+        name:
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]
+        description:
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]
+        image:
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]
+        prices:
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]
+        product: 
+            groups: ["sold-product-attribute-read"]
+        attributeValue: 
+            groups: ["order-read","sold-product-read","sold-product-attribute-read"]

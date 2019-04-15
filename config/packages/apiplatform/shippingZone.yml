@@ -1,0 +1,11 @@
+resources:
+    App\Entity\ShippingZone:
+        attributes:
+            pagination_enabled: false
+            normalization_context:
+                groups: ['shipping-zone-read']
+            denormalization_context:
+                groups: ['shipping-zone-write']
+        collectionOperations:
+            
+        itemOperations:

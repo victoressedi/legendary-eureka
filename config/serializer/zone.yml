@@ -1,0 +1,12 @@
+App\Entity\Zone:
+    attributes:
+        id: 
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write", "zone-read", "zone-write"]
+        name:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write", "zone-read", "zone-write"]
+        title:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write", "zone-read", "zone-write"]
+        description:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write", "zone-read", "zone-write"]
+        iso:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write", "zone-read", "zone-write"]

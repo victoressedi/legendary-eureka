@@ -52,3 +52,11 @@ services:
                 event: postPersist
                 entity: App\Entity\User
                 entity_manager: custom
+                
+    App\Controller\OrderController:
+        arguments:
+            - '@logger'
+            - '@doctrine.orm.entity_manager'
+            - '@App\Helpers\ObjectUtils'
+            - '@api_platform.serializer.normalizer.item'
+            - '@App\Service\NotificationGenerator'

@@ -1,0 +1,39 @@
+resources:
+    App\Entity\Order:
+        attributes:
+            pagination_enabled: false
+            normalization_context:
+                groups: ['order-read']
+            denormalization_context:
+                groups: ['order-write']
+        collectionOperations:
+            get:
+                method: 'GET'
+                
+            post:
+                method: 'POST'
+        itemOperations:
+            
+            get:
+                method: 'GET'
+
+            put:
+                method: 'PUT'            
+            
+            available:
+                method: 'POST'
+                route_name: 'api_orders_availables'
+                swagger_context:
+                    summary: 'Returns available orders'
+                    parameters:
+                        -
+                            in: body
+                            name: order
+                            type: object
+                    responses:
+                        '200':
+                            description: Collection of ShippingMethods, it can be empty
+                            content:
+                                application/json:
+                                    schema:
+                                        type: Collection

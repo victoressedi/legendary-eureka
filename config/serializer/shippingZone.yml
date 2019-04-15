@@ -1,0 +1,18 @@
+App\Entity\ShippingZone:
+    attributes:
+        id: 
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        name:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        title:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        description:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        value:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        zone:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        maxWeight:
+            groups: ["shipping-method-read", "shipping-method-write", "shipping-zone-read", "shipping-zone-write"]
+        shippingMethod:
+            groups: ["shipping-method-write", "shipping-zone-read", "shipping-zone-write"]

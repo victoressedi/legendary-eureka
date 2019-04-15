@@ -1,0 +1,12 @@
+easy_admin:
+    entities:    
+        NotificationUser:
+            disabled_actions: ['delete']
+            class: App\Entity\NotificationUser
+            label: menu.notificationUsers
+            list:
+                title: menu.notificationUsers
+#                fields:
+            show:
+                title: menu.notificationUser
+#                fields:

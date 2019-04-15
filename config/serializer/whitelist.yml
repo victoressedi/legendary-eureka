@@ -1,0 +1,8 @@
+App\Entity\Whitelist:
+    attributes:
+        name:
+            groups: ['whitelist-read','user-read','product-read']
+        users:
+            groups: ['whitelist-read']
+        products:
+            groups: ['whitelist-read']

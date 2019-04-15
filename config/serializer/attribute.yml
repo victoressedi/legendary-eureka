@@ -1,0 +1,14 @@
+App\Entity\Attribute:
+    attributes:
+        id:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]
+        name:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]
+        title:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]
+        description:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]
+        type:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]
+        options:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read","category-read"]

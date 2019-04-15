@@ -69,6 +69,10 @@ menu.user: Usuario
 menu.users: Usuarios
 menu.device: Dispositivo
 menu.devices: Dispositivos
+menu.notification: Notificación
+menu.notifications: Notificaciones
+menu.notificationUser: Notificación Usuario
+menu.notificationUsers: Notificación Usuarios
 
 
 # ROLES

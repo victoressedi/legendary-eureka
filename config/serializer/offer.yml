@@ -1,0 +1,8 @@
+App\Entity\Offer:
+    attributes:
+        value:
+            groups: ["offer-read", "product-read"]
+        endDate:
+            groups: ["offer-read", "product-read"]
+        startDate:
+            groups: ["offer-read", "product-read"]

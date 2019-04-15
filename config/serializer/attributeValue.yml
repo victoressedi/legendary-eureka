@@ -1,0 +1,16 @@
+App\Entity\AttributeValue:
+    attributes:
+        id: 
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]
+        name:
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]
+        title:
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]
+        description:
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]
+        image:
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]
+        sort:
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]
+        prices:
+            groups: ["category-read","product-read","attribute-read", "attributevalue-read"]

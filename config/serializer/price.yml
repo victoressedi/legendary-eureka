@@ -1,0 +1,10 @@
+App\Entity\Price:
+    attributes:
+        id:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read", "category-read"]
+        value:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read", "category-read"]
+        list:
+            groups: ['price-read',"product-read","attribute-read", "attributevalue-read", "category-read"]
+        attributeValue:
+            groups: ['price-read']

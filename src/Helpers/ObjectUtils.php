@@ -2,28 +2,27 @@
 
 namespace App\Helpers;
 
-class ObjectUtils
+use Doctrine\ORM\Mapping\Entity;
+use Symfony\Component\Routing\Exception\InvalidParameterException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Essedi\EasyCommerce\Helpers\ObjectUtils as BaseObjectUtils;
+
+class ObjectUtils extends BaseObjectUtils
 {
-    /**
-     * 
-     * @param Entity $obj
-     * @param array $data
-     * @param string[] $exclude
-     * @return Entity
-     */
-    public function initialize($obj, $data, array $exclude = [])
+
+    public function checkField($field, $entity1, $entity2)
     {
-        foreach ($data as $key => $value)
-        {
-            if (!in_array($key, $exclude))
-            {
-                $functionName = 'set' . ucfirst($key);
-                if (method_exists($obj, $functionName))
-                {
-                    $obj->$functionName($value);
-                }
-            }
-        }
-        return $obj;
+        return parent::checkField($field, $entity1, $entity2);
     }
+
+    public function findObject($raw, $instance, $throws = true)
+    {
+        return parent::findObject($raw, $instance, $throws);
+    }
+
+    public function initialize($obj, $data, $exclude = array())
+    {
+        return parent::initialize($obj, $data, $exclude);
+    }
+
 }

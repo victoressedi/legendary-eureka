@@ -1,0 +1,16 @@
+App\Entity\NotificationUser:
+    attributes:
+        id:
+            groups: ["user-read", "notification-user-read", "notification-read"]
+        notification:
+            groups: ["user-read", "notification-user-read"]
+        description:
+            groups: ["user-read", "notification-user-read", "notification-read", "notification-user-write"]
+        readed:
+            groups: ["user-read", "notification-user-read", "notification-read", "notification-user-write"]
+        deleted:
+            groups: ["user-read", "notification-user-read", "notification-read", "notification-user-write"]
+        user:
+            groups: ["notification-user-read","notification-read"]
+        calling:
+            groups: ["user-read", "notification-user-read","notification-read"]
