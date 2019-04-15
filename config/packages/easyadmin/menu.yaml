@@ -1,8 +1,19 @@
 easy_admin:
     design:    
         menu:
-            - { entity: User, icon: 'user' }
-            - { entity: Device, icon: 'mobile' }
-            - { entity: Notification, icon: 'bell' }
-            - { entity: NotificationUser, icon: 'bell' }
             - { label: 'API', route: 'api', icon: 'tasks'}
+            - { entity: Address, icon: 'map-marker' }
+            - { entity: Device, icon: 'mobile' }
+            -  
+                label: 'eCommerce'
+                icon: 'shopping-basket' 
+                children: 
+                    - { entity: Attribute, icon: 'list' }
+                    - { entity: AttributeValue, icon: 'clipboard' }
+                    - { entity: Campaign, icon: 'line-chart' }
+                    - { entity: Category, icon: 'folder-open' }
+                    - { entity: Product, icon: 'product-hunt' }
+                    - { entity: Offer, icon: 'clock-o' }
+                    - { entity: Price, icon: 'money' }
+                    - { entity: PriceList, icon: 'th-list' }
+            - { entity: User, icon: 'user' }
