@@ -1,0 +1,33 @@
+easy_admin:
+    entities:    
+        AttributeValue:
+            class: App\Entity\AttributeValue
+            label: menu.attributeValues
+            list:
+                title: menu.attributeValues
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'attribute', label: 'attribute' }
+                    - { property: 'name', label: 'name' }
+
+            show:
+                title: menu.attributeValue
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'prices', label: 'prices' }
+                    - { property: 'attribute', label: 'attribute' }
+            edit:
+                title: menu.attributeValue
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'prices', label: 'prices' }
+                    - { property: 'attribute', label: 'attribute' }
+            new:
+                title: menu.attributeValue
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'prices', label: 'prices' }
+                    - { property: 'attribute', label: 'attribute' }

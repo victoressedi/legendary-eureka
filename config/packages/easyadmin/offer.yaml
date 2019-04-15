@@ -1,0 +1,16 @@
+easy_admin:
+    entities:    
+        Offer:
+            class: App\Entity\Offer
+            label: menu.offers
+            list:
+                title: menu.offers
+                fields:
+                    - { property: 'id', label: 'id' }
+
+            show:
+                title: menu.offer
+            edit:
+                title: menu.offer
+            new:
+                title: menu.offer

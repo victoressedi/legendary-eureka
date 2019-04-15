@@ -1,0 +1,28 @@
+easy_admin:
+    entities:    
+        Product:
+            class: App\Entity\Product
+            label: menu.products
+            list:
+                title: menu.products
+#                fields:
+#                    - { property: 'id', label: 'id' }
+
+            show:
+                title: menu.product
+                fields:
+                    - { property: 'basePrices', label: 'price', template: 'easy_admin/prices.html.twig'}
+
+            edit:
+                title: menu.product
+                fields:
+                    - { property: 'name', label: 'name'}
+                    - { property: 'title', label: 'title'}
+                    - { property: 'description', label: 'description'}
+                    - { property: 'imageFile', label: 'image', type: 'vich_image', help: 'image.formats'}
+                    - { property: 'parent', label: 'parent'}
+                    - { property: 'attributes', label: 'attributes'}
+                    - { property: 'enabled', label: 'enabled'}
+                    
+            new:
+                title: menu.producte

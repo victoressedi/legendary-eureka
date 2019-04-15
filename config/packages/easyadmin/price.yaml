@@ -1,0 +1,19 @@
+easy_admin:
+    entities:    
+        Price:
+            class: App\Entity\Price
+            label: menu.prices
+            list:
+                title: menu.prices
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'list', label: 'list' }
+                    - { property: 'value', label: 'value' }
+#                    - { property: 'attributeValue', label: 'attributeValue' }
+
+            show:
+                title: menu.price
+            edit:
+                title: menu.price
+            new:
+                title: menu.price

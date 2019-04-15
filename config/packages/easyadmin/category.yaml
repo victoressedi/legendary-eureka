@@ -1,0 +1,24 @@
+easy_admin:
+    entities:    
+        Category:
+            class: App\Entity\Category
+            label: menu.categories
+            list:
+                title: menu.categories
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'title', label: 'title' }
+
+            show:
+                title: menu.category
+            edit:
+                title: menu.category
+                fields:
+                    - { property: 'title', label: 'title'}
+                    - { property: 'description', label: 'description'}
+                    - { property: 'imageFile', label: 'image', type: 'vich_image', help: 'image.formats'}
+                    - { property: 'parent', label: 'parent'}
+                    - { property: 'enabled', label: 'enabled'}
+
+            new:
+                title: menu.category

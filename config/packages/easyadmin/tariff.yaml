@@ -1,0 +1,28 @@
+easy_admin:
+    entities:    
+        Tariff:
+            class: App\Entity\Tariff
+            label: menu.tariffs
+            list:
+                title: menu.tariffs
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'price', label: 'price' }
+                    - { property: 'product', label: 'product'}
+
+            show:
+                title: menu.tariff
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'price', label: 'price' }
+                    - { property: 'product', label: 'product'}
+
+            edit:
+                title: menu.tariff
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'price', label: 'price' }
+                    - { property: 'product', label: 'product'}

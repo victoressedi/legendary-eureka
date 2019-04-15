@@ -1,0 +1,16 @@
+easy_admin:
+    entities:    
+        Campaign:
+            class: App\Entity\Campaign
+            label: menu.campaigns
+            list:
+                title: menu.campaigns
+                fields:
+                    - { property: 'id', label: 'id' }
+
+            show:
+                title: menu.campaign
+            edit:
+                title: menu.campaign
+            new:
+                title: menu.campaign

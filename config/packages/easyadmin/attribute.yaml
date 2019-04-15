@@ -1,0 +1,17 @@
+easy_admin:
+    entities:    
+        Attribute:
+            class: App\Entity\Attribute
+            label: menu.attributes
+            list:
+                title: menu.attributes
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'product', label: 'product' }
+
+            show:
+                title: menu.attribute
+            edit:
+                title: menu.attribute
+            new:
+                title: menu.attribute

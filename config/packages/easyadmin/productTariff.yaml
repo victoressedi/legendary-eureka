@@ -1,0 +1,37 @@
+easy_admin:
+    entities:    
+        ProductTariff:
+            class: App\Entity\ProductTariff
+            label: menu.productTariffs
+            list:
+                title: menu.productTariffs
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'country', label: 'country' }
+
+            show:
+                title: menu.productTariff
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'country', label: 'country' }
+                    - { property: 'commissions', label: 'commissions'}
+                    - { property: 'tariffs', label: 'tariffs'}
+
+            edit:
+                title: menu.productTariff
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+                    - { property: 'country', label: 'country' }
+                    - { property: 'commissions', label: 'commissions'}
+                    - { property: 'tariffs', label: 'tariffs'}
+
+            new:
+                title: menu.productTariff
+                fields:
+                    - { property: 'name', label: 'name' }
+                    - { property: 'country', label: 'country' }
+                    - { property: 'commissions', label: 'commissions'}
+                    - { property: 'tariffs', label: 'tariffs'}

@@ -1,0 +1,16 @@
+easy_admin:
+    entities:    
+        PriceList:
+            class: App\Entity\PriceList
+            label: menu.priceLists
+            list:
+                title: menu.priceLists
+                fields:
+                    - { property: 'id', label: 'id' }
+
+            show:
+                title: menu.priceList
+            edit:
+                title: menu.priceList
+            new:
+                title: menu.priceList

@@ -1,0 +1,40 @@
+easy_admin:
+    entities:    
+        Address:
+            class: App\Entity\Address
+            label: menu.addresses
+            list:
+                title: menu.addresses
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'user', label: 'user' }
+                    - { property: 'contract', label: 'contract' }
+                    - { property: 'contractBilling', label: 'contractBilling'}
+                    - { property: 'direction', label: 'direction'}
+                    - { property: 'number', label: 'number'}
+                    - { property: 'extension', label: 'extension'}
+                    - { property: 'cp', label: 'cp'}
+
+            show:
+                title: menu.addres
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'user', label: 'user' }
+                    - { property: 'contract', label: 'contract' }
+                    - { property: 'contractBilling', label: 'contractBilling'}
+                    - { property: 'direction', label: 'direction'}
+                    - { property: 'number', label: 'number'}
+                    - { property: 'extension', label: 'extension'}
+                    - { property: 'cp', label: 'cp'}
+
+            edit:
+                title: menu.addres
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'user', label: 'user' }
+                    - { property: 'contract', label: 'contract' }
+                    - { property: 'contractBilling', label: 'contractBilling'}
+                    - { property: 'direction', label: 'direction'}
+                    - { property: 'number', label: 'number'}
+                    - { property: 'extension', label: 'extension'}
+                    - { property: 'cp', label: 'cp'}

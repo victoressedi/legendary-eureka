@@ -1,0 +1,22 @@
+easy_admin:
+    entities:    
+        Country:
+            class: App\Entity\Country
+            label: menu.countries
+            list:
+                title: menu.countries
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+
+            show:
+                title: menu.country
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }
+
+            edit:
+                title: menu.country
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'name', label: 'name' }

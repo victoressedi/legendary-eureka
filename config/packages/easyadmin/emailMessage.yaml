@@ -1,0 +1,39 @@
+easy_admin:
+    entities:    
+        EmailMessage:
+            class: App\Entity\EmailMessage
+            label: menu.email.messages
+            list:
+                title: menu.email.messages
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'author', label: 'author' }
+                    - { property: 'destination', label: 'destination' }
+                    - { property: 'user', label: 'user' }
+                    - { property: 'title', label: 'title' }
+                    - { property: 'message', label: 'message' }
+                    - { property: 'createdDate', label: 'createdDate' }
+
+            show:
+                title: menu.email.message
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'author', label: 'author' }
+                    - { property: 'destination', label: 'destination' }
+                    - { property: 'title', label: 'title' }
+                    - { property: 'message', label: 'message' }
+                    - { property: 'parent', label: 'parent' }
+                    - { property: 'childrens', label: 'childrens' }
+                    - { property: 'createdDate', label: 'createdDate' }
+
+            edit:
+                title: menu.email.message
+                fields:
+                    - { property: 'id', label: 'id' }
+                    - { property: 'author', label: 'author' }
+                    - { property: 'destination', label: 'destination' }
+                    - { property: 'title', label: 'title' }
+                    - { property: 'message', label: 'message' }
+                    - { property: 'parent', label: 'parent' }
+                    - { property: 'childrens', label: 'childrens' }
+                    - { property: 'createdDate', label: 'createdDate' }
